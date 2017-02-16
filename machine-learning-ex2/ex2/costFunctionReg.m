@@ -20,13 +20,13 @@ grad = zeros(size(theta));
 for i = 1 : m
     tmp = sigmoid(theta' * X(i, :)');
     J = J + (-y(i)*log(tmp) - (1-y(i))*log(1-tmp));
-    grad(1) = grad(1) + (tmp -y(i)) * X(i, 1);
-    grad(2:length(grad)) = grad(2:length(grad)) + (tmp -y(i)) * X(i, 2:length(grad))' + lambda*theta(2:length(grad));
+    grad = grad + (tmp -y(i)) .* X(i, :)';
 end
 
-J = J / m + lambda * (sum(theta.^2)) / (2 * m);
+J = J / m + lambda * (sum(theta(2:end).^2)) / (2 * m);
 
 grad = grad / m;
+grad(2:end) = grad(2:end) + (lambda / m) * theta(2:end);
 
 % =============================================================
 
