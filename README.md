@@ -1,14 +1,14 @@
 # Coursera-MachineLearning
 Coursera - Machine Learning assignments
 
-## Week 2 - ex1: Linear Regression
+## Week 2: Linear Regression
 
-## Week 3 - ex2: Logistic Regression
+## Week 3: Logistic Regression
 
-## Week 4 - ex3: Multi-class Classification and Neural Networks
+## Week 4: Multi-class Classification and Neural Networks
 
-## Week 5 - ex4: Neural Network Llearning
+## Week 5: Neural Network Llearning
 
-## Week 6 - ex5: Regularized Linear Regression and Bias v.s. Variance
+## Week 6: Regularized Linear Regression and Bias/Variance
 
 
